@@ -6,11 +6,12 @@ public class FizzBuzz {
     public String play(int number) {
         String res = "";
         if (number % 3 == 0) {
-            res += "fizz";
+            res += "Fizz";
         }
         if (number % 5 == 0) {
-            res += "buzz";
+            res += "Buzz";
         }
+
         if (Strings.isNullOrEmpty(res)) {
             res = String.valueOf(number);
         }
