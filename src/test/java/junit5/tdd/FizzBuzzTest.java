@@ -70,4 +70,15 @@ public class FizzBuzzTest {
         //then
         Assertions.assertEquals("FizzBuzzWhizz", res);
     }
+
+    @Test
+    public void should_return_FizzWhizz_when_play_fizz_buzz_given_21() {
+        //given
+        int number = 21;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String res = fizzBuzz.play(number);
+        //then
+        Assertions.assertEquals("FizzWhizz", res);
+    }
 }
