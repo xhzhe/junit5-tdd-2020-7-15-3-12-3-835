@@ -11,8 +11,8 @@ public class FizzBuzz {
         if (number % 5 == 0) {
             res += "Buzz";
         }
-        if(number % 7==0){
-            res+="Whizz";
+        if (number % 7 == 0) {
+            res += "Whizz";
         }
         if (Strings.isNullOrEmpty(res)) {
             res = String.valueOf(number);
