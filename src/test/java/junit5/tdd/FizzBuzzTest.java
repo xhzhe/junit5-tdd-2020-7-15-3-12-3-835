@@ -9,9 +9,9 @@ public class FizzBuzzTest {
     public void should_return_1_when_play_fizz_buzz_given_1() {
         //given
         int number = 1;
-        //when
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String res = fizzBuzz.play();
+        //when
+        String res = fizzBuzz.play(number);
         //then
         Assertions.assertEquals("1", res);
     }
