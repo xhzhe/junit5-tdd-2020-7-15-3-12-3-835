@@ -17,24 +17,35 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_when_play_fizz_buzz_given_3() {
+    public void should_return_Fizz_when_play_fizz_buzz_given_3() {
         //given
         int number = 3;
         FizzBuzz fizzBuzz = new FizzBuzz();
         //when
         String res = fizzBuzz.play(number);
         //then
-        Assertions.assertEquals("fizz", res);
+        Assertions.assertEquals("Fizz", res);
     }
 
     @Test
-    public void should_return_buzz_when_play_fizz_buzz_given_5() {
+    public void should_return_Buzz_when_play_fizz_buzz_given_5() {
         //given
         int number = 5;
         FizzBuzz fizzBuzz = new FizzBuzz();
         //when
         String res = fizzBuzz.play(number);
         //then
-        Assertions.assertEquals("buzz", res);
+        Assertions.assertEquals("Buzz", res);
+    }
+
+    @Test
+    public void should_return_Whizz_when_play_fizz_buzz_given_7() {
+        //given
+        int number = 5;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String res = fizzBuzz.play(number);
+        //then
+        Assertions.assertEquals("Whizz", res);
     }
 }
